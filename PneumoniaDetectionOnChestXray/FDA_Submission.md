@@ -18,7 +18,7 @@
 
 ### 2. Algorithm Design and Function
                                                  ALGORITHM IN CLINICAL SETTING
-![flowchart1](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/AIHCND_C2_Starter/flowchart.png)
+![flowchart1](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/PneumoniaDetectionOnChestXray/img/flowchart.png)
 
 
 **DICOM Checking Steps:** Pydicom module in python library was used to extract Images as well as metadata form DICOM files. 
@@ -27,7 +27,7 @@
 
 **CNN Architecture:**
 Used VGG-16 as base model initialized with Imagenet weights. Replaced last layer by combination of dense and Dropout layers as follows:
-![vgg](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/AIHCND_C2_Starter/vgg.png)![model](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/AIHCND_C2_Starter/model.png)
+![vgg](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/PneumoniaDetectionOnChestXray/img/vgg.png)![model](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/PneumoniaDetectionOnChestXray/img/model.png)
 
 Finetuned the whole network from 15th layer of VGG Net.
 
@@ -63,23 +63,23 @@ Finetuned the whole network from 15th layer of VGG Net.
 
 Algorithm training performance visualization
 
-![training_performance](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/AIHCND_C2_Starter/training_performance.png)
+![training_performance](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/PneumoniaDetectionOnChestXray/img/training_performance.png)
 
 
 
 P-R Curve
 
-![P-R Curve](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/AIHCND_C2_Starter/prc.png)
+![P-R Curve](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/PneumoniaDetectionOnChestXray/img/prc.png)
 
 
 AUC Curve
-![auc curve](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/AIHCND_C2_Starter/auc.png)
+![auc curve](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/PneumoniaDetectionOnChestXray/img/auc.png)
 
 
 
 **Final Threshold and Explanation:**
 
-![f1](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/AIHCND_C2_Starter/f1.png)
+![f1](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/PneumoniaDetectionOnChestXray/img/f1.png)
 
 I chose F1 score as the metrics for this problem because depending on the scnario in which the algorithm  is used, both precision and recall can be important factors. Hence,  to balance both of them, this metric is used.
 
@@ -91,12 +91,12 @@ We used a part of the [National Institutes of Health Chest X-Ray Dataset](https:
 We have 1431 cases from 112120 cases which have Pneumonia as a finding. That is 1.2763110952550838% of whole dataset. We will distribute these into training and validation sets accordingly
 
 **Description of Training Dataset:** 
-![ts_img](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/AIHCND_C2_Starter/trainingds.png)
+![ts_img](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/PneumoniaDetectionOnChestXray/img/trainingds.png)
 
 We used 2576 images for training set with 50 percent of these having Pneumonia as a finding. 
 
 **Description of Validation Dataset:** 
-![val_img](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/AIHCND_C2_Starter/validds.png)
+![val_img](https://github.com/ShivankYadav/PneumoniaDetectionOnChestXray/blob/master/PneumoniaDetectionOnChestXray/img/validds.png)
 
 We used 715 validation images, 20 percent of these having Pneumonia which is similar to prevelance of Pneumonia in clinical setting.
 
