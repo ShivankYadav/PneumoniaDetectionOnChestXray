@@ -1,0 +1,24 @@
+List of improvements suggested by Udacity Reviewer.
+
+1. [Done] Edema and Consolidation might be confused with Pneumonia. At last of EDA. This is something you can use in your FDA report on 
+	limitations.
+2. [Done] Your Training Loss was still falling steeply; it would have helped to conduct more training until this loss becomes 'stable'.
+	You might want to increase your learning rate so the loss settles down more quickly.
+3. [Done] After defining the different parameters on DICOM header, they should be tested on the 6 images to see which of the images indeed has 
+	the properties we have defined or not.
+	Note: for the predictions of Pneumonia you did absolutely great work there so now it's just to run the DICOM test on the images 
+	to see which of them passes the test and which doesn't.
+	Hint: As there are 6 images 3 of them passed the test while 3 other failed i.e the others that failed have a property that is
+ 	not defined on the DICOM header.
+
+	DICOM images to ensure that image position, image type, and body part are acceptable. 
+	In this test dataset, three of the images do not meet this standard.
+
+4. [Done] clinical impact section: bring out impacts on how a FN and a FP prediction will affect the patients. 
+	Does one have more impact than the other?
+
+5. [Done] It would be helpful to add it can be used for both genders under 'Indications for Use'.
+6. [Done] In DICOM checking steps in FDA Submission, there is a need to describe the DICOM checks that you perform before sending an image through your algorithm, 
+	e.g. checking of image position, image type, and body part examined.
+
+7. [Done] Change the age distribution range.
