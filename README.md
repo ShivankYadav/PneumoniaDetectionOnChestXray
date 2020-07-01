@@ -1,6 +1,8 @@
 # PneumoniaDetectionOnChestXray
 Exploratory Data Analysis + DICOM DataHandling and Image Preprocessing + Tensorflow/KerasCNN for classification of Pneumonia on chest-XRAY + FDAValidationPlan.
 
+All the code is available in the .ipynb files.
+
 
 # FDA  Submission
 
