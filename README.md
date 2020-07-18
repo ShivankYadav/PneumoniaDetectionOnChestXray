@@ -17,6 +17,7 @@ All the code is available in the .ipynb files.
 **Intended Use Statement:** Assist Radiologist in classification of Pneumonia on Chest X-ray.
 
 **Indications for Use:** Improve Radiologist's workflow by prioritizing chest X-rays with higher probability of Pneumonia. To be used for patients of both gender with ages between 1-90.
+
 **Device Limitations:** GPU/Cloud Computing Instance may be required with High workload if to be used in Emergency settings. Should not use model for patients older than 90.  Edema and Consolidation has a lot of similarity in their mean intensity distributions with that of Pneumonia and thus our model can misclassify here and result in False Positives.
 
 **Clinical Impact of Performance:**
